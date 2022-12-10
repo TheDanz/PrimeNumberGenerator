@@ -44,6 +44,9 @@
                                     <fontDescription key="titleFontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="25"/>
                                     <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="generateButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xsQ-lJ-iog"/>
+                                </connections>
                             </button>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="REL-xh-4CF">
                                 <rect key="frame" x="16" y="69" width="361" height="40"/>
@@ -82,6 +85,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="7kM-41-oVR" firstAttribute="top" secondItem="REL-xh-4CF" secondAttribute="bottom" constant="30" id="IAR-jb-1kC"/>
                             <constraint firstItem="Hql-Dp-vkM" firstAttribute="top" secondItem="qOk-dt-jLY" secondAttribute="bottom" constant="8" symbolic="YES" id="K0D-CM-OLu"/>
@@ -103,9 +107,22 @@
                             <constraint firstItem="qOk-dt-jLY" firstAttribute="top" secondItem="REL-xh-4CF" secondAttribute="bottom" constant="30" id="xqZ-4A-ach"/>
                             <constraint firstItem="Hql-Dp-vkM" firstAttribute="leading" secondItem="haO-OX-WTL" secondAttribute="trailing" constant="8" symbolic="YES" id="zRa-VD-YEl"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="pN4-q7-BpD" appends="YES" id="9jy-NX-zz2"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="6ZZ-X9-e4P" id="rX3-0V-k17"/>
+                        <outlet property="qTextField" destination="Hql-Dp-vkM" id="Ok8-Ou-LdH"/>
+                        <outlet property="tTextField" destination="qOk-dt-jLY" id="VYt-vk-KmY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="pN4-q7-BpD">
+                    <connections>
+                        <action selector="tap:" destination="BYZ-38-t0r" id="KHQ-MH-LBK"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="89.312977099236633" y="-34.507042253521128"/>
         </scene>

@@ -1,19 +1,33 @@
-//
-//  ViewController.swift
-//  PrimeNumberGenerator
-//
-//  Created by Danil Ryumin on 10.12.2022.
-//
-
 import UIKit
+import BigNumber
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var tTextField: UITextField!
+    @IBOutlet weak var answerLabel: UILabel!
+    @IBOutlet weak var qTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func generateButtonClicked(_ sender: Any) {
+        guard let t = BInt(tTextField.text ?? "0") else { return }
+        guard let q = BInt(qTextField.text ?? "0") else { return }
+        
+        var generator = Generator(t: t, q: q)
+        generator.goto(.stepOne)
+        
+        updateAnswer(number: generator.answer)
+    }
+    
+    @IBAction func tap(_ sender: Any) {
+        view.endEditing(true)
+    }
+    
+    func updateAnswer(number: BInt) {
+        answerLabel.text = "Answer: \(number)"
+        answerLabel.isHidden = false
+    }
 }
 
