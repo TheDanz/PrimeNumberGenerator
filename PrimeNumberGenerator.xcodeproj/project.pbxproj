@@ -14,6 +14,7 @@
 		0552702E294510BF00056124 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0552702D294510BF00056124 /* Assets.xcassets */; };
 		05527031294510BF00056124 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0552702F294510BF00056124 /* LaunchScreen.storyboard */; };
 		0552703A2945227100056124 /* BigNumber in Frameworks */ = {isa = PBXBuildFile; productRef = 055270392945227100056124 /* BigNumber */; };
+		0552703C2945231900056124 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0552703B2945231900056124 /* Generator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		0552702D294510BF00056124 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05527030294510BF00056124 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05527032294510BF00056124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0552703B2945231900056124 /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				05527024294510BD00056124 /* AppDelegate.swift */,
 				05527026294510BD00056124 /* SceneDelegate.swift */,
 				05527028294510BD00056124 /* ViewController.swift */,
+				0552703B2945231900056124 /* Generator.swift */,
 				0552702A294510BD00056124 /* Main.storyboard */,
 				0552702D294510BF00056124 /* Assets.xcassets */,
 				0552702F294510BF00056124 /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05527029294510BD00056124 /* ViewController.swift in Sources */,
+				0552703C2945231900056124 /* Generator.swift in Sources */,
 				05527025294510BD00056124 /* AppDelegate.swift in Sources */,
 				05527027294510BD00056124 /* SceneDelegate.swift in Sources */,
 			);
