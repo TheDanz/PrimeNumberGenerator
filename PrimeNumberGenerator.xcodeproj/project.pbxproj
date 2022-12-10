@@ -13,6 +13,7 @@
 		0552702C294510BD00056124 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0552702A294510BD00056124 /* Main.storyboard */; };
 		0552702E294510BF00056124 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0552702D294510BF00056124 /* Assets.xcassets */; };
 		05527031294510BF00056124 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0552702F294510BF00056124 /* LaunchScreen.storyboard */; };
+		0552703A2945227100056124 /* BigNumber in Frameworks */ = {isa = PBXBuildFile; productRef = 055270392945227100056124 /* BigNumber */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0552703A2945227100056124 /* BigNumber in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = PrimeNumberGenerator;
+			packageProductDependencies = (
+				055270392945227100056124 /* BigNumber */,
+			);
 			productName = PrimeNumberGenerator;
 			productReference = 05527021294510BD00056124 /* PrimeNumberGenerator.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 05527018294510BD00056124;
+			packageReferences = (
+				055270382945227100056124 /* XCRemoteSwiftPackageReference "Swift-BigInt" */,
+			);
 			productRefGroup = 05527022294510BD00056124 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -358,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		055270382945227100056124 /* XCRemoteSwiftPackageReference "Swift-BigInt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mkrd/Swift-BigInt";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		055270392945227100056124 /* BigNumber */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 055270382945227100056124 /* XCRemoteSwiftPackageReference "Swift-BigInt" */;
+			productName = BigNumber;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 05527019294510BD00056124 /* Project object */;
 }
