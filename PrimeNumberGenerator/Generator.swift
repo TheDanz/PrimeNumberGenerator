@@ -47,6 +47,29 @@ class Generator {
             }
         }
     }
+    
+    private func modpow(base: BInt, exp: BInt, n: BInt) -> BInt {
+        if n == 1 { return 0 }
+
+        var ret: BInt = 1
+        var tempBase = base
+        var tempExp = exp
+          
+        tempBase = tempBase % n;
+          
+        while tempExp > 0 {
+          
+          if (tempExp % 2) == 1 {
+            ret = (ret * tempBase) % n;
+          }
+          
+          tempExp >>= 1;
+          
+          tempBase = (tempBase * tempBase) % n;
+        }
+          
+        return ret
+      }
 }
 
 enum Steps {
