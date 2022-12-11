@@ -39,7 +39,7 @@ class Generator {
             }
             
         case .stepFive:
-            if ((2 ** (p - 1)) % p == 1) && ((2 ** (N + u)) % p != 1) {
+            if modpow(base: 2, exp: p - 1, n: p) == 1 && modpow(base: 2, exp: N + u, n: p) != 1 {
                 self.answer = p
             } else {
                 u += 2
