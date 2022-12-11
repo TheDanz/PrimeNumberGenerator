@@ -17,7 +17,7 @@ class Generator {
         switch step {
         case .stepOne:
             let e = Double.random(in: 0...1)
-            N = (2 ** (t - 1) / q) + BInt((BDouble((2 ** (t - 1)).description)! * e / q).rounded())
+            N = (2 ** (t - 1) / q) + BInt((pow(2, t - 1) * e / q).rounded())
             if N % 2 == 1 {
                 N += 1
             }
