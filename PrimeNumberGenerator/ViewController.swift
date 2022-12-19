@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         guard let t = BInt(tTextField.text ?? "0") else { return }
         guard let q = BInt(qTextField.text ?? "0") else { return }
         
-        var generator = Generator(t: t, q: q)
+        let generator = Generator(t: t, q: q)
         generator.goto(.stepOne)
         
         updateAnswer(number: generator.answer)
