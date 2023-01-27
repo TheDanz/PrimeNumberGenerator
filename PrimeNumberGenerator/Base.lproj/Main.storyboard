@@ -66,7 +66,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="234672837462783640238964087136480610846108624801726408711" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OQH-wR-c1B">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OQH-wR-c1B">
                                 <rect key="frame" x="16" y="313" width="361" height="505"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -113,6 +113,8 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="appNameLabel" destination="c75-yD-vvX" id="CDl-z7-n3O"/>
+                        <outlet property="primeNumberTextView" destination="OQH-wR-c1B" id="bwd-T6-HCM"/>
                         <outlet property="qTextField" destination="Hql-Dp-vkM" id="Ok8-Ou-LdH"/>
                         <outlet property="tTextField" destination="qOk-dt-jLY" id="VYt-vk-KmY"/>
                     </connections>

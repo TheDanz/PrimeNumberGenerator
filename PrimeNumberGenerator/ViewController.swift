@@ -4,8 +4,9 @@ import BigNumber
 class ViewController: UIViewController {
 
     @IBOutlet weak var tTextField: UITextField!
-    @IBOutlet weak var answerLabel: UILabel!
     @IBOutlet weak var qTextField: UITextField!
+    @IBOutlet weak var primeNumberTextView: UITextView!
+    @IBOutlet weak var appNameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,16 +19,11 @@ class ViewController: UIViewController {
         let generator = Generator(t: t, q: q)
         generator.goto(.stepOne)
         
-        updateAnswer(number: generator.answer)
+        primeNumberTextView.text = "\(generator.answer)"
     }
     
     @IBAction func tap(_ sender: Any) {
         view.endEditing(true)
-    }
-    
-    func updateAnswer(number: BInt) {
-        answerLabel.text = "Answer: \(number)"
-        answerLabel.isHidden = false
     }
 }
 
