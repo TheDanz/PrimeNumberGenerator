@@ -66,21 +66,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ZZ-X9-e4P">
-                                <rect key="frame" x="16" y="325" width="361" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="nfn-il-nML"/>
-                                </constraints>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="234672837462783640238964087136480610846108624801726408711" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OQH-wR-c1B">
+                                <rect key="frame" x="16" y="313" width="361" height="505"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="6ZZ-X9-e4P" firstAttribute="top" secondItem="7Cn-89-BwI" secondAttribute="bottom" constant="20" id="0yx-q4-4hU"/>
                             <constraint firstItem="7kM-41-oVR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="1a9-PW-N6v"/>
                             <constraint firstItem="7Cn-89-BwI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="3Bf-jS-MmX"/>
                             <constraint firstItem="7kM-41-oVR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Cda-V5-l00"/>
@@ -88,21 +85,22 @@
                             <constraint firstItem="haO-OX-WTL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="FH4-Rm-jcW"/>
                             <constraint firstItem="haO-OX-WTL" firstAttribute="top" secondItem="7kM-41-oVR" secondAttribute="bottom" constant="8" symbolic="YES" id="PP6-i3-aez"/>
                             <constraint firstItem="qOk-dt-jLY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="SLF-uv-raY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6ZZ-X9-e4P" secondAttribute="trailing" constant="16" id="UGv-tX-o8T"/>
+                            <constraint firstItem="OQH-wR-c1B" firstAttribute="top" secondItem="7Cn-89-BwI" secondAttribute="bottom" constant="8" symbolic="YES" id="VgJ-wZ-5pI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qOk-dt-jLY" secondAttribute="trailing" constant="16" id="WpJ-nB-JDO"/>
+                            <constraint firstItem="OQH-wR-c1B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="X4S-gi-aG1"/>
                             <constraint firstItem="qOk-dt-jLY" firstAttribute="leading" secondItem="7kM-41-oVR" secondAttribute="trailing" constant="8" symbolic="YES" id="cqb-ZU-Ifi"/>
                             <constraint firstItem="7Cn-89-BwI" firstAttribute="top" secondItem="Hql-Dp-vkM" secondAttribute="bottom" constant="30" id="csI-O8-xg8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OQH-wR-c1B" secondAttribute="trailing" constant="16" id="e3m-yA-1sT"/>
                             <constraint firstItem="Hql-Dp-vkM" firstAttribute="top" secondItem="qOk-dt-jLY" secondAttribute="bottom" constant="8" symbolic="YES" id="f2F-1a-C7F"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Cn-89-BwI" secondAttribute="trailing" constant="16" id="leV-sD-BHo"/>
+                            <constraint firstItem="OQH-wR-c1B" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="rbw-mG-dpt"/>
                             <constraint firstItem="Hql-Dp-vkM" firstAttribute="leading" secondItem="haO-OX-WTL" secondAttribute="trailing" constant="8" symbolic="YES" id="rvp-nP-O0m"/>
-                            <constraint firstItem="6ZZ-X9-e4P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tju-Vx-vYE"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="pN4-q7-BpD" appends="YES" id="9jy-NX-zz2"/>
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="answerLabel" destination="6ZZ-X9-e4P" id="rX3-0V-k17"/>
                         <outlet property="qTextField" destination="Hql-Dp-vkM" id="Ok8-Ou-LdH"/>
                         <outlet property="tTextField" destination="qOk-dt-jLY" id="VYt-vk-KmY"/>
                     </connections>
@@ -118,6 +116,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
