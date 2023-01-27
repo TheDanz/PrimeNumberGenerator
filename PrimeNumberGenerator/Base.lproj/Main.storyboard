@@ -26,7 +26,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Просто число длины [t/2] битов" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hql-Dp-vkM">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="A prime number of length [t/2] bits" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hql-Dp-vkM">
                                 <rect key="frame" x="58" y="201" width="319" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="WgL-Qd-LQa"/>
@@ -48,7 +48,7 @@
                                     <action selector="generateButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xsQ-lJ-iog"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Требуемая длина числа в битах" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qOk-dt-jLY">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Required number length in bits" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qOk-dt-jLY">
                                 <rect key="frame" x="58" y="159" width="319" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="IVU-wH-PjU"/>
