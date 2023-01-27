@@ -73,18 +73,28 @@
                                 <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prime Number Generator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c75-yD-vvX">
+                                <rect key="frame" x="16" y="64" width="361" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="l9P-pY-U0C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="7kM-41-oVR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="1a9-PW-N6v"/>
+                            <constraint firstItem="c75-yD-vvX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="1mf-8C-gwI"/>
                             <constraint firstItem="7Cn-89-BwI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="3Bf-jS-MmX"/>
-                            <constraint firstItem="7kM-41-oVR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Cda-V5-l00"/>
+                            <constraint firstItem="7kM-41-oVR" firstAttribute="top" secondItem="c75-yD-vvX" secondAttribute="bottom" constant="55" id="8jr-93-ZaR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hql-Dp-vkM" secondAttribute="trailing" constant="16" id="DdS-7Y-0SH"/>
                             <constraint firstItem="haO-OX-WTL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="FH4-Rm-jcW"/>
                             <constraint firstItem="haO-OX-WTL" firstAttribute="top" secondItem="7kM-41-oVR" secondAttribute="bottom" constant="8" symbolic="YES" id="PP6-i3-aez"/>
-                            <constraint firstItem="qOk-dt-jLY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="SLF-uv-raY"/>
+                            <constraint firstItem="c75-yD-vvX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="TEA-Qj-0ZQ"/>
                             <constraint firstItem="OQH-wR-c1B" firstAttribute="top" secondItem="7Cn-89-BwI" secondAttribute="bottom" constant="8" symbolic="YES" id="VgJ-wZ-5pI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qOk-dt-jLY" secondAttribute="trailing" constant="16" id="WpJ-nB-JDO"/>
                             <constraint firstItem="OQH-wR-c1B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="X4S-gi-aG1"/>
@@ -95,6 +105,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Cn-89-BwI" secondAttribute="trailing" constant="16" id="leV-sD-BHo"/>
                             <constraint firstItem="OQH-wR-c1B" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="rbw-mG-dpt"/>
                             <constraint firstItem="Hql-Dp-vkM" firstAttribute="leading" secondItem="haO-OX-WTL" secondAttribute="trailing" constant="8" symbolic="YES" id="rvp-nP-O0m"/>
+                            <constraint firstItem="qOk-dt-jLY" firstAttribute="top" secondItem="c75-yD-vvX" secondAttribute="bottom" constant="55" id="vv5-sd-RoU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c75-yD-vvX" secondAttribute="trailing" constant="16" id="yCy-DA-JWB"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="pN4-q7-BpD" appends="YES" id="9jy-NX-zz2"/>
